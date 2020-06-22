@@ -1,0 +1,88 @@
+@font-face {
+  font-family: LightFont;
+  src: url(fonts/TitilliumWeb-Light.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: LightFont, sans-serif;
+  color: #edf0f1;
+  background-color: #121212;
+  cursor: pointer;
+}
+
+li, a {
+  font-family: LightFont, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #edf0f1;
+  text-decoration: none;
+  background-color: #121212;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background-color: #121212;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.NavLinks {
+  list-style: none;
+  background-color: #121212;
+}
+
+.NavLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+  background-color: #121212;
+}
+
+.NavLinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+.NavLinks li a:hover {
+  color: #0088a9;
+}
+
+.NavLinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 990px) {
+  .NavLinks li {
+    display: inline-block;
+    padding: 0px 10px;
+  }
+  .MobileStack {
+    height: 86px;
+  }
+  .title {
+    display: none;
+  }
+  nav {
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  header {
+    height: 120px;
+  }
+  a {
+    font-size: 48px;
+  }
+}

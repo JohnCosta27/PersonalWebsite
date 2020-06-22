@@ -1,0 +1,372 @@
+@font-face {
+  font-family: LightFont;
+  src: url(fonts/TitilliumWeb-Light.ttf);
+}
+a {
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: LightFont, sans-serif;
+  color: #edf0f1;
+  background-color: #242424;
+  cursor: pointer;
+  text-align: center;
+}
+body {
+  background-color: #242424;
+}
+
+.image {
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  z-index: 1;
+  width: 100%;
+  height: 720px;
+}
+
+.verticalSpacer {
+  height: 25px;
+}
+
+.TitleContainer {
+  position: relative;
+  top: 37.5%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  width: 60%;
+}
+
+.projectTitle {
+  width: 100%;
+  height: 20%;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.projectTitleWrap {
+  width: 100%;
+  height: 20%;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.TextHolder {
+  padding: 15px 10%;
+  color: #edf0f1;
+  background-color: #353535;
+}
+
+.AboutMeText {
+  font-size: 24px;
+  text-align: left;
+  font-family: LightFont;
+  color: #edf0f1;
+}
+
+.SectionContainer {
+  background-color: #353535;
+  padding: 0 2%;
+}
+
+.blueColour {
+  color: #0088a9;
+}
+
+.GridLayout {
+  display: flex;
+  background-color: #242424;
+  padding: 1% 2%;
+}
+
+.SubjectContainer {
+  background-color: #353535;
+  width: 100%;
+}
+
+.SubjectTitle {
+  width: 75%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #353535;
+  font-size: 36px;
+  font-family: LightFont, sans-serif;
+  color: #edf0f1;
+  text-align: center;
+}
+
+.TutoringSubjectTitle {
+  width: 75%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #353535;
+  font-size: 36px;
+  font-family: LightFont, sans-serif;
+  color: #edf0f1;
+  text-align: center;
+}
+
+.ContactText {
+  font-size: 36px;
+  text-align: left;
+  color: #edf0f1;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family: LightFont;
+}
+
+.CenteredText {
+  text-align: center;
+}
+
+.visibleClass {
+  opacity: 1;
+}
+
+.hiddenClass {
+  display: none;
+}
+
+.subjectGrid {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subject {
+  width: 100%;
+  height: 20%;
+  margin-left: 0.75%;
+  margin-right: 0.75%;
+  background-color: #121212;
+  border-radius: 10px;
+  border-color: #edf0f1;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+  z-index: 0;
+}
+
+.subjectElements {
+  background-color: #121212;
+  border-radius: 10px;
+  border-color: #edf0f1;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  transition:visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+#goback {
+  width: 18.5%;
+  height: 20%;
+  transform: translate(0, 175%);
+}
+
+#displayinfo {
+  width: 75%;
+  height: 79%;
+  transform: translate(30%, 7%);
+  display: inline-block;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.bottomText {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  width: 50%;
+  height: 20%
+  text-align: center;
+  transition:visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.frame {
+  text-align: center;
+  width: 80%;
+  height: 60%
+}
+
+.visibleTest {
+  visibility:visible;
+  opacity:1;
+}
+
+.forwardIndex {
+  z-index: 1;
+}
+
+.gMathsAnimation {
+  transform: translate(0, -120%);
+}
+
+.gCompAnimation {
+  transform: translate(-108%, -120%);
+}
+
+.programmingAnimation {
+  transform: translate(-216%, -120%);
+}
+
+.aMathsAnimation {
+  transform: translate(-324%, -120%);
+}
+
+.aFMathsAnimation {
+  transform: translate(-432%, -120%);
+}
+
+.cssgrid {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  height: 50%;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  font-size: 3rem;
+  color: #fff;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  transition: all 200ms;
+  overflow: hidden;
+
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #edf0f1;
+  border-width: 1px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.1);
+}
+
+.projectCardTitles {
+  font-family: LightFont;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 990px) {
+  .cssgrid {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+  .AboutMeText {
+    font-size: 36px;
+  }
+  .TutoringSubjectTitle {
+    font-size: 60px;
+  }
+  .SubjectTitle {
+    font-size: 48px;
+  }
+  .TitleContainer {
+    width: 80%;
+  }
+  #bottomDiv {
+    display: none;
+  }
+  .subjectGrid {
+    flex-direction: column;
+    width: 80%;
+    height: 75%;
+    top: 65%;
+    transform: translate(-50%, -65%);
+  }
+  .subject {
+    margin-bottom: 20px;
+  }
+
+  .gMathsAnimation {
+    transform: translate(0, -40%);
+  }
+
+  .gCompAnimation {
+    transform: translate(0%, -147%);
+  }
+
+  .programmingAnimation {
+    transform: translate(0%, -254%);
+  }
+
+  .aMathsAnimation {
+    transform: translate(0%, -361%);
+  }
+
+  .aFMathsAnimation {
+    transform: translate(0%, -468%);
+  }
+
+  #goback {
+    width: 100%;
+    transform: translate(0%, 450%);
+    height: 20%;
+  }
+
+  #displayinfo {
+    width: 100%;
+    height: 75%;
+    transform: translate(0%, 18%);
+  }
+  .projectTitle {
+    position: relative;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -3%);
+    width: 60%;
+  }
+}
+
+@media (max-width: 910px) {
+  a {
+    font-size: 30px;
+  }
+}

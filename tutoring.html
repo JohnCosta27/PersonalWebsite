@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>John Costa - Tutoring</title>
+  <link rel="stylesheet" type="text/css" href="NavigationBar.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="tutoringscript.js"></script>
+</head>
+
+<body onload="load()">
+
+  <header>
+    <h1 class="title">John Costa</h1>
+    <nav>
+      <ul class="NavLinks">
+        <li><a id="AboutMeButton" href="index.html">About Me</a></li>
+        <li><a id="TutoringButton" style="color: #0088a9">Tuition</a></li>
+        <li><a id="ProjectButton" href="projects.html">Projects</a></li>
+        <li><a id="ContactButton" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="subjectGrid">
+    <div id="gMaths" onclick="subjectClick('gMaths')" class="subject"><p class="TutoringSubjectTitle" style="background-color: #121212">GCSE Maths</p></div>
+    <div id="gComp" onclick="subjectClick('gComp')" class="subject"><p class="TutoringSubjectTitle" style="background-color: #121212">GCSE Comp Sci</p></div>
+    <div id="programming" onclick="subjectClick('programming')" class="subject"><p class="TutoringSubjectTitle" style="background-color: #121212">Coding</p></div>
+    <div id="aMaths" onclick="subjectClick('aMaths')" class="subject"><p class="TutoringSubjectTitle" style="background-color: #121212">A-level Maths</p></div>
+    <div id="aFMaths" onclick="subjectClick('aFMaths')" class="subject"><p class="TutoringSubjectTitle" style="background-color: #121212">A-level Further Maths</p></div>
+    <div id="goback" onclick="removetest()" class="subjectElements"><p class="TutoringSubjectTitle" style="background-color: #121212">Go back</p></div>
+    <div id="displayinfo" class="subjectElements">
+      <br>
+      <p id="subjectInfoHolder" class="AboutMeText" style="background-color: #121212; margin-left: 10px; margin-right: 10px">
+        Loading text...
+      </p>
+      <br>
+      <iframe id="video" class="frame" src="https://www.youtube.com/embed/gaeHXHXCByw" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="bottomDiv" class="bottomText" onclick="goToContact()">
+    <p class="TutoringSubjectTitle" style="cursor: pointer">Click here to contact me about any of these subject!</p>
+  </div>
+
+</body>
+
+</html>
